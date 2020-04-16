@@ -1,0 +1,521 @@
+---- Installing Eolie ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=~/.mozilla/firefox;home;~/.config/chromium;~/.config/chrome;
+
+[Session Bus Policy]
+org.gnome.Eolie.Proxy.*=own
+org.freedesktop.secrets=talk
+
+[Environment]
+GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0
+SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+---- Installing FeedReader ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=~/.local/share/decsync;
+
+[Session Bus Policy]
+org.gtk.vfs=talk
+org.gtk.vfs.*=talk
+org.freedesktop.secrets=talk
+org.gnome.OnlineAccounts=talk
+org.freedesktop.Notifications=talk
+org.gnome.FeedReader.ArticleView=own
+
+[Environment]
+DECSYNC_DIR=.local/share/decsync
+
+---- Installing Feeds ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Ferdi ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-videos:ro;/run/.heim_org.h5l.kcm-socket;xdg-download;xdg-documents:ro;xdg-pictures:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+---- Installing FileZilla ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.gnome.SessionManager=talk
+org.freedesktop.PowerManagement=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Firefox ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-download;
+persistent=.mozilla;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+org.gnome.SessionManager=talk
+org.gtk.vfs.*=talk
+org.a11y.Bus=talk
+org.freedesktop.FileManager1=talk
+
+[System Bus Policy]
+org.freedesktop.NetworkManager=talk
+
+---- Installing Fondo ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gnome.SessionManager=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Fractal ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Franz ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-videos:ro;xdg-download;xdg-documents:ro;xdg-pictures:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Gajim ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=~/.gnupg;
+
+[Session Bus Policy]
+org.gnome.ScreenSaver=talk
+org.mpris.MediaPlayer2.*=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.GeoClue2=talk
+org.freedesktop.login1=talk
+
+[Environment]
+PYTHONPATH=/app/plugins/lib/python3.7/site-packages
+
+---- Installing Geary ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=/tmp;xdg-cache/evolution/addressbook:ro;
+
+[Session Bus Policy]
+org.gnome.evolution.dataserver.Sources5=talk
+org.gnome.evolution.dataserver.AddressBook10=talk
+org.freedesktop.secrets=talk
+org.gnome.Contacts=talk
+org.gnome.ControlCenter=talk
+org.gnome.OnlineAccounts=talk
+
+---- Installing Gnome client for Jami ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-videos;xdg-config/ring;~/.local/share/gnome-ring;xdg-download;xdg-pictures;~/.local/share/ring;xdg-music;xdg-documents;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+cx.ring.Ring=own
+
+---- Installing Gpredict ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+persistent=.config/Gpredict;
+
+---- Installing HackUp ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Haguichi ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=/var/lib/logmein-hamachi:ro;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.login1=talk
+
+---- Installing HakuNeko ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+---- Installing HexChat ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+filesystems=xdg-download;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.*=talk
+org.freedesktop.Notifications=talk
+
+---- Installing i2pd ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Indiechoor-KDEConnect ------
+
+---- Installing IRCCloud ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing JDownloader ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=xdg-download;
+
+[Environment]
+PATH=/app/bin:/app/jre/bin:/usr/bin
+JAVA_HOME=/app/jre
+
+---- Installing Kaidan ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+QT_QUICK_CONTROLS_STYLE=org.kde.desktop
+
+---- Installing Konversation ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Kotatogram Desktop ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-download;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+com.canonical.AppMenu.Registrar=talk
+com.canonical.indicator.application=talk
+org.freedesktop.Notifications=talk
+com.canonical.Unity=talk
+org.freedesktop.portal.Fcitx=talk
+org.kde.StatusNotifierWatcher=talk
+org.ayatana.indicator.application=talk
+
+---- Installing Mattermost ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing Max Control ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Midori Web Browser ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-download;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.GeoClue2=talk
+
+---- Installing Mumble ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.kde.StatusNotifierItem-2-2=own
+org.freedesktop.Notifications=talk
+
+---- Installing nheko ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+---- Installing ONVIFViewer ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Open Drive (Google Drive Client) ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing openWMail ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-download;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing Pidgin ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+filesystems=xdg-download;
+persistent=.purple;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+
+---- Installing Polari ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=~/.local/share/TpLogger;
+
+[Session Bus Policy]
+org.freedesktop.Telepathy.Client.Logger=own
+org.freedesktop.Telepathy.Client.GnomeShell.*=talk
+org.freedesktop.Telepathy.Client.TpGLibRequestAndHandle.*=own
+org.freedesktop.Telepathy.Client.Polari.*=own
+org.freedesktop.Telepathy.Client.Polari=own
+org.freedesktop.Telepathy.ConnectionManager.idle=own
+org.freedesktop.Telepathy.AccountManager=own
+org.freedesktop.secrets=talk
+org.freedesktop.Telepathy.Logger=own
+org.freedesktop.Telepathy.Connection.idle.irc.*=own
+org.freedesktop.Telepathy.ChannelDispatcher=own
+org.freedesktop.Telepathy.MissionControl5=own
+
+[Environment]
+TPL_LOG_DIR=.local/share
+
+---- Installing qBittorrent ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.gnome.SessionManager=talk
+org.freedesktop.PowerManagement=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing qTox ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;xdg-videos;/media;xdg-pictures;xdg-download;xdg-music;xdg-desktop;xdg-documents;~/.config/dconf:ro;xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Quassel Client ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+net.launchpad.DockManager=talk
+org.freedesktop.DockManager=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Quaternion ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing qutebrowser ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;xdg-download;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Qv2ray ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.kde.StatusNotifierItem-2-1=own
+ca.desrt.dconf=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Read It Later ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+
+---- Installing Remmina ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;ssh-auth;pcsc;
+filesystems=home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.gnome.Shell=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+
+---- Installing Remote Touchpad ------
+[Context]
+shared=network;
+sockets=x11;fallback-x11;
+
+---- Installing Rest Scope ------
+[Context]
+shared=network;
+sockets=x11;wayland;fallback-x11;
+
+---- Installing RetroShare-gui ------
