@@ -1,0 +1,959 @@
+---- Installing Tux Paint ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.tuxpaint;
+
+---- Installing Tux Typing ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Words ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Words.activity
+SUGAR_BUNDLE_ID=org.sugarlabs.Words
+
+---- Installing Xiphos ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+persistent=.sword;
+
+[Session Bus Policy]
+org.gnome.GConf=talk
+
+=================== Installing flathub's gaming appliechoions (total of 194) ========================
+---- Installing 0 A.D. ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Aisleriot Solitaire ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+[Session Bus Policy]
+org.gnome.GConf=talk
+
+---- Installing Albion Online ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.albiononline;
+
+---- Installing Aqueducts ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Armagetron Advanced ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing AstroMenace ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+
+---- Installing Athenaeum ------
+[Context]
+shared=network;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-data/flatpak:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Atomic Tanks ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.atanks;
+
+---- Installing Backgammony ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Battle for Wesnoth ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+
+---- Installing Battle Tanks ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.btanks;
+
+---- Installing Billiards ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+
+---- Installing Blastem ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=home:ro;xdg-run/gvfs:ro;
+
+---- Installing BlockOut II ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.bl2;
+
+---- Installing BZFlag ------
+[Context]
+shared=network;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.bzf;
+
+---- Installing Cave Story NX ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing ChessX ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Chromium B.S.U. ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Cockatrice ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing ColorDeducto ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/ColorDeducto.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.ColorDeducto
+
+---- Installing Connectagram ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Construo ------
+[Context]
+shared=ipc;
+sockets=x11;
+
+---- Installing Cowsay ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Cow's Revenge ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.godot;
+
+---- Installing CuteMaze ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Dice Roller ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+---- Installing Digital: A Love Story ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=~/.renpy:create;
+
+---- Installing Dimensions ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Dimensions.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Dimensions
+
+---- Installing Dolphin Emulator ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;host:ro;xdg-run/app/com.discordapp.Discord:create;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing don't take it personally, babe, it just ain't your story ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=~/.renpy:create;
+
+---- Installing Doomsday Engine ------
+[Context]
+shared=network;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Dragon’s Apprentice ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Dungeon Crawl Stone Soup ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=~/.crawl:create;
+
+---- Installing EDuke32 ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-documents/EDuke32:create;
+persistent=.config/eduke32;
+
+---- Installing Endless Sky ------
+[Context]
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Eternal Lands ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=~/.elc:create;
+
+---- Installing evtest-qt ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Extreme Tuxracer ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.etr;
+
+---- Installing ezQuake ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+persistent=.ezquake;
+
+---- Installing Fish Fillets ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.fillets-ng;
+
+---- Installing Five or More ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing Flare: Empyrean Campaign ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+
+---- Installing FlightGear ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+persistent=~/.fgfs/;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Flippy ------
+[Context]
+sockets=x11;
+
+---- Installing Four-in-a-row ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+---- Installing Freeciv gtk+-3.22 client ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+persistent=.freeciv;
+
+---- Installing FreeCol ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+PATH=/app/jre/bin:/usr/bin:/app/bin
+JAVA_HOME=/app/jre
+
+---- Installing FreeDM ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing Freedoom: Phase 1 ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing Freedoom: Phase 2 ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing Frets On Fire ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.fretsonfire;
+
+---- Installing Frog Squash ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Frozen Bubble ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.frozen-bubble;
+
+---- Installing FS-UAE ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Fuse ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+ALSA_CONFIG_PATH=
+
+---- Installing Games ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;all;
+filesystems=host:ro;~/.var/app/com.valvesoftware.Steam:ro;
+
+[Session Bus Policy]
+org.freedesktop.Tracker1=talk
+org.freedesktop.Flatpak=talk
+
+[Environment]
+TRACKER_SPARQL_BACKEND=bus
+
+---- Installing GB Enhanced+ ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing gbrainy ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+
+---- Installing GCompris ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing GNOME 2048 ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing GNOME Chess ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing GNOME Hitori ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing GNOME Klotski ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing GNOME Mahjongg ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing GNOME Mines ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing GNOME Nibbles ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing GNOME Reversi ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.Color=talk
+
+---- Installing GNOME Robots ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+---- Installing GNOME Sudoku ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing GNOME Taquin ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+---- Installing GNOME Tetravex ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing Gottet ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing GZDoom ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing Hedgewars ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;
+persistent=.hedgewars;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Hexalate ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing HexGL ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+
+---- Installing Implode ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Implode.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.ImplodeActivity
+
+---- Installing Infector ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Julius ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+filesystems=home;
+
+---- Installing Kapman ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Katawa Shoujo ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+persistent=.renpy;
+
+---- Installing KAtomic ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KBlocks ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KBounce ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KDiamond ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KGoldrunner ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KHangMan ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Kigo ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Killbots ------
+
+---- Installing KJumpingCube ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Klickety ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KNetWalk ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Kobo Deluxe ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Kolor Lines ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KPatience ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KSquares ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KSudoku ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.kde.kuiserver=talk
+org.kde.JobViewServer=talk
+
+---- Installing Kubrick ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing L'Abbaye des morts ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Lander ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;all;
+
+---- Installing Lights Off ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Lugaru HD ------
+[Context]
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing M.A.R.S. - A ridiculous shooter ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.marsshooter;
+
+---- Installing Maze ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Maze.activity
+SUGAR_BUNDLE_ID=org.sugarlabs.Maze
+
+---- Installing MegaGlest ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.megaglest;
+
+---- Installing Memorize ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Memorize.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Memorize
+
+---- Installing mGBA ------
+[Context]
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[System Bus Policy]
+org.freedesktop.UPower=talk
+
+---- Installing Minecraft ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.minecraft;
+
+[Environment]
+JAVA_HOME=/app/jre
+
+---- Installing Minetest ------
+[Context]
+shared=network;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.minetest;
+
+---- Installing Missile Math ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing MKI3D Game ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Moonlight ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+LIBVA_DRIVERS_PATH=
+LIBVA_DRIVER_NAME=
+
+---- Installing Mr Rescue ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing Naev ------
+[Context]
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Naval Battle ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Nestopia ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;home:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Nexuiz Classic ------
+[Context]
+shared=network;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.nexuiz;
+
+---- Installing noiz2sa ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.noiz2sa.prf;
+
