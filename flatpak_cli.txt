@@ -1,0 +1,392 @@
+############################ USING FLATPAK #########################
+
+ramya@ramya-Ubuntu:~$ flatpak --help
+Usage:
+  flatpak [OPTION...] COMMAND
+
+Builtin Commands:
+ Manage installed applications and runtimes
+  install                Install an application or runtime
+  update                 Update an installed application or runtime
+  uninstall              Uninstall an installed application or runtime
+  mask                   Mask out updates and automatic installation
+  list                   List installed apps and/or runtimes
+  info                   Show info for installed app or runtime
+  history                Show history
+  config                 Configure flatpak
+  repair                 Repair flatpak installation
+  create-usb             Put applications or runtimes onto removable media
+
+ Finding applications and runtimes
+  search                 Search for remote apps/runtimes
+
+ Running applications
+  run                    Run an application
+  override               Override permissions for an application
+  make-current           Specify default version to run
+  enter                  Enter the namespace of a running application
+  ps                     Enumerate running applications
+  kill                   Stop a running application
+
+ Manage file access
+  documents              List exported files
+  document-export        Grant an application access to a specific file
+  document-unexport      Revoke access to a specific file
+  document-info          Show information about a specific file
+
+ Manage dynamic permissions
+  permissions            List permissions
+  permission-remove      Remove item from permission store
+  permission-set         Set permissions
+  permission-show        Show app permissions
+  permission-reset       Reset app permissions
+
+ Manage remote repositories
+  remotes                List all configured remotes
+  remote-add             Add a new remote repository (by URL)
+  remote-modify          Modify properties of a configured remote
+  remote-delete          Delete a configured remote
+  remote-ls              List contents of a configured remote
+  remote-info            Show information about a remote app or runtime
+
+ Build applications
+  build-init             Initialize a directory for building
+  build                  Run a build command inside the build dir
+  build-finish           Finish a build dir for export
+  build-export           Export a build dir to a repository
+  build-bundle           Create a bundle file from a ref in a local repository
+  build-import-bundle    Import a bundle file
+  build-sign             Sign an application or runtime
+  build-update-repo      Update the summary file in a repository
+  build-commit-from      Create new commit based on existing ref
+  repo                   Show information about a repo
+
+Help Options:
+  -h, --help             Show help options
+
+Application Options:
+  --version              Print version information and exit
+  --default-arch         Print default arch and exit
+  --supported-arches     Print supported arches and exit
+  --gl-drivers           Print active gl drivers and exit
+  --installations        Print paths for system installations and exit
+  -v, --verbose          Show debug information, -vv for more detail
+  --ostree-verbose       Show OSTree debug information
+
+ramya@ramya-Ubuntu:~$
+
+
+
+=========================
+Flatpak runtime library:
+=========================
+
+ramya@ramya-Ubuntu:~$ flatpak --installations
+/var/lib/flatpak
+
+
+ramya@ramya-Ubuntu:/var/lib/flatpak/repo$ ls
+config  extensions  flathub.trustedkeys.gpg  objects  refs  state  tmp
+
+
+
+=====================
+Flatpak remote repo:
+=====================
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$ flatpak remotes
+Name    Options
+flathub system
+
+
+==============================================================
+Installing application: using application ID <org.gimp.GIMP>
+==============================================================
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$ flatpak list
+ramya@ramya-Ubuntu:/var/lib/flatpak$
+
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$ flatpak search gimp
+Name                                   Description                                                  Application ID             Version         Remotes
+GNU Image Manipulation Program         Create images and edit photographs                           org.gimp                   2.10.18         flathub
+Glimpse                                Create images and edit photographs                           org.glimpse_editor         0.1.2           flathub
+Scans to PDF                           Create small, searchable PDFs from scanned documents         com.github.unrud           0.1.1           flathub
+
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$ flatpak install org.gimp.GIMP
+Looking for matches…
+Found similar ref(s) for ‘org.gimp.GIMP’ in remote ‘flathub’ (system).
+Use this remote? [Y/n]: y
+Required runtime for org.gimp.GIMP/x86_64/stable (runtime/org.gnome.Platform/x86_64/3.36) found in remote flathub
+Do you want to install it? [Y/n]: y
+
+org.gimp.GIMP permissions:
+    ipc     network     x11     file access [1]     dbus access [2]     tags [3]
+
+    [1] /tmp, host, xdg-config/GIMP, xdg-config/gtk-3.0, xdg-run/gvfs
+    [2] org.freedesktop.FileManager1, org.gtk.vfs, org.gtk.vfs.*
+    [3] stable
+
+
+        ID                                             Branch            Op           Remote            Download
+ 1. [✓] org.freedesktop.Platform.GL.default            19.08             i            flathub            93.2 MB / 92.6 MB
+ 2. [✓] org.freedesktop.Platform.openh264              2.0               i            flathub           858.1 kB / 916.8 kB
+ 3. [✓] org.gnome.Platform.Locale                      3.36              i            flathub            17.7 kB / 322.9 MB
+ 4. [✓] org.gtk.Gtk3theme.Ambiance                     3.22              i            flathub             1.6 MB / 1.5 MB
+ 5. [✓] org.gnome.Platform                             3.36              i            flathub           282.3 MB / 322.9 MB
+ 6. [✓] org.gimp.GIMP                                  stable            i            flathub            91.4 MB / 110.0 MB
+
+Installation complete.
+ramya@ramya-Ubuntu:/var/lib/flatpak$
+
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$ flatpak list
+Name                                               Application ID                                 Version           Branch           Installation
+default                                            org.freedesktop.Platform.GL.default                              19.08            system
+openh264                                           org.freedesktop.Platform.openh264                                2.0              system
+GNU Image Manipulation Program                     org.gimp.GIMP                                  2.10.18           stable           system
+GNOME Application Platform version 3.36            org.gnome.Platform                                               3.36             system
+Ambiance Gtk theme                                 org.gtk.Gtk3theme.Ambiance                                       3.22             system
+ramya@ramya-Ubuntu:/var/lib/flatpak$
+
+
+
+
+===============================================
+Installing application: using application name
+===============================================
+
+ramya@ramya-Ubuntu:~$ flatpak install vim
+Looking for matches…
+Found similar ref(s) for ‘vim’ in remote ‘flathub’ (system).
+Use this remote? [Y/n]: y
+Similar refs found for ‘vim’ in remote ‘flathub’ (system):
+
+   1) app/net.mediaarea.AVIMetaEdit/x86_64/stable
+   2) app/org.vim.Vim/x86_64/stable
+   3) app/io.neovim.nvim/x86_64/stable
+
+Which do you want to use (0 to abort)? [0-3]: 2
+Required runtime for org.vim.Vim/x86_64/stable (runtime/org.freedesktop.Platform/x86_64/19.08) found in remote flathub
+Do you want to install it? [Y/n]: y
+
+org.vim.Vim permissions:
+    ipc     network     wayland     x11     file access [1]     dbus access [2]
+
+    [1] /tmp, /var/tmp, host
+    [2] org.freedesktop.Flatpak
+
+
+        ID                                           Branch           Op           Remote            Download
+ 1. [✓] org.freedesktop.Platform.Locale              19.08            i            flathub            17.6 kB / 318.2 MB
+ 2. [✗] org.freedesktop.Platform.openh264            19.08            i            flathub           594.2 kB / 593.4 kB
+ 3. [✓] org.freedesktop.Platform                     19.08            i            flathub            71.6 MB / 238.2 MB
+ 4. [✓] org.vim.Vim                                  stable           i            flathub            17.0 MB / 12.5 MB
+
+Warning: org.freedesktop.Platform.openh264 not installed
+Installation complete.
+ramya@ramya-Ubuntu:~$
+
+
+=============================================================================================================================================================
+Note that vim is already installed in the underlying system but flatpak still installs vim as it is run in a sandbox which is not aware to the underlying OS
+=============================================================================================================================================================
+
+ramya@ramya-Ubuntu:~$ sudo apt-get install vim
+sudo: unable to resolve host ramya-Ubuntu
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+vim is already the newest version (2:7.4.1689-3ubuntu1.3).
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-36 linux-headers-4.15.0-36-generic linux-headers-4.15.0-39 linux-headers-4.15.0-39-generic linux-headers-4.15.0-42
+  linux-headers-4.15.0-42-generic linux-headers-4.15.0-43 linux-headers-4.15.0-43-generic linux-headers-4.15.0-45 linux-headers-4.15.0-45-generic
+  linux-headers-4.15.0-47 linux-headers-4.15.0-47-generic linux-headers-4.15.0-58 linux-headers-4.15.0-58-generic linux-headers-4.15.0-60
+  linux-headers-4.15.0-60-generic linux-headers-4.15.0-65 linux-headers-4.15.0-65-generic linux-headers-4.15.0-66 linux-headers-4.15.0-66-generic
+  linux-image-4.15.0-36-generic linux-image-4.15.0-39-generic linux-image-4.15.0-42-generic linux-image-4.15.0-43-generic linux-image-4.15.0-45-generic
+  linux-image-4.15.0-47-generic linux-image-4.15.0-58-generic linux-image-4.15.0-60-generic linux-image-4.15.0-65-generic linux-image-4.15.0-66-generic
+  linux-modules-4.15.0-36-generic linux-modules-4.15.0-39-generic linux-modules-4.15.0-42-generic linux-modules-4.15.0-43-generic
+  linux-modules-4.15.0-45-generic linux-modules-4.15.0-47-generic linux-modules-4.15.0-58-generic linux-modules-4.15.0-60-generic
+  linux-modules-4.15.0-65-generic linux-modules-4.15.0-66-generic linux-modules-extra-4.15.0-29-generic linux-modules-extra-4.15.0-36-generic
+  linux-modules-extra-4.15.0-39-generic linux-modules-extra-4.15.0-42-generic linux-modules-extra-4.15.0-43-generic linux-modules-extra-4.15.0-45-generic
+  linux-modules-extra-4.15.0-47-generic linux-modules-extra-4.15.0-58-generic linux-modules-extra-4.15.0-60-generic linux-modules-extra-4.15.0-65-generic
+  linux-modules-extra-4.15.0-66-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 118 not upgraded.
+ramya@ramya-Ubuntu:~$
+
+
+
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$ ps -ae | grep vim
+ 5605 pts/19   00:00:00 vim
+
+ramya@ramya-Ubuntu:~$ flatpak ps
+Instance   PID  Application Runtime
+3385366075 5648 org.vim.Vim org.freedesktop.Platform
+
+ramya@ramya-Ubuntu:/var/lib/flatpak$
+
+
+
+====================================
+Running application through flatpak
+====================================
+
+
+
+
+
+=============================
+Flatpak application pid info
+=============================
+
+ramya@ramya-Ubuntu:~$ cat /proc/5648/cgroup
+12:memory:/
+11:freezer:/
+10:hugetlb:/
+9:cpu,cpuacct:/
+8:devices:/user.slice
+7:cpuset:/
+6:blkio:/
+5:pids:/user.slice/user-1000.slice
+4:rdma:/
+3:perf_event:/
+2:net_cls,net_prio:/
+1:name=systemd:/user.slice/user-1000.slice/user@1000.service/flatpak-org.vim.Vim-5648.scope
+
+
+=========================================================
+Entering the sandbox or namespace of the flatpak process
+=========================================================
+
+ramya@ramya-Ubuntu:/proc/5648$ flatpak ps
+Instance   PID  Application Runtime
+3385366075 5648 org.vim.Vim org.freedesktop.Platform
+
+ramya@ramya-Ubuntu:/proc/5648$ flatpak enter 3385366075 /bin/bash
+ramya@ramya-Ubuntu:~$ ls
+Algm          CN       Documents  examples.desktop  ip_project  Music       oflops  openflow  Pictures  Public  SE         Videos
+arp_spoofing  Desktop  Downloads  galatine          mininet     new_result  oftest  OS        pox       result  Templates
+ramya@ramya-Ubuntu:~$
+
+ramya@ramya-Ubuntu:~$ pwd
+/home/ramya
+ramya@ramya-Ubuntu:~$ exit
+exit
+ramya@ramya-Ubuntu:/proc/5648$
+
+
+ramya@ramya-Ubuntu:~$ ./list_running_procs.sh   -----------------------> program to list the running processes, lists the processes inside the namespace
+  PID TTY          TIME CMD
+    1 ?        00:00:00 flatpak-bwrap
+    2 ?        00:00:00 vim
+    6 ?        00:00:00 bash
+   23 ?        00:00:00 list_running_pr
+   24 ?        00:00:00 ps
+ramya@ramya-Ubuntu:~$
+
+
+====================
+Sandbox permissions
+====================
+
+ramya@ramya-Ubuntu:~$ flatpak info --show-permissions org.vim.Vim
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=host;/tmp;/var/tmp;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk
+ramya@ramya-Ubuntu:~$
+
+Also, the /var/run dir is different:
+--------
+On host:
+--------
+ramya@ramya-Ubuntu:/var/run$ ls
+acpid.pid      avahi-daemon  dbus                 lightdm      motd.dynamic    openvswitch  rsyslogd.pid       snapd.socket  systemd     udisks2
+acpid.socket   crond.pid     dhclient-enp0s3.pid  lightdm.pid  mount           plymouth     sendsigs.omit.d    sshd          thermald    user
+agetty.reload  crond.reboot  initctl              lock         network         pppconfig    shm                sshd.pid      tmpfiles.d  utmp
+alsa           cups          initramfs            log          NetworkManager  resolvconf   snapd-snap.socket  sudo          udev        uuidd
+ramya@ramya-Ubuntu:/var/run$
+
+ramya@ramya-Ubuntu:/var/run$ cat /proc/cgroups
+#subsys_name    hierarchy       num_cgroups     enabled
+cpuset  7       1       1
+cpu     9       1       1
+cpuacct 9       1       1
+blkio   6       1       1
+memory  12      1       1
+devices 8       69      1
+freezer 11      1       1
+net_cls 2       1       1
+perf_event      3       1       1
+net_prio        2       1       1
+hugetlb 10      1       1
+pids    5       5       1
+rdma    4       1       1
+ramya@ramya-Ubuntu:/var/run$
+
+
+-----------------------------------------
+Inside the application instance/sandbox:
+------------------------------------------
+ramya@ramya-Ubuntu:/var/run$ ls
+build  build-runtime  flatpak  host  systemd  user
+ramya@ramya-Ubuntu:/var/run$
+
+
+ramya@ramya-Ubuntu:/proc$ cat cgroups
+#subsys_name    hierarchy       num_cgroups     enabled
+cpuset  7       1       1
+cpu     9       1       1
+cpuacct 9       1       1
+blkio   6       1       1
+memory  12      1       1
+devices 8       69      1
+freezer 11      1       1
+net_cls 2       1       1
+perf_event      3       1       1
+net_prio        2       1       1
+hugetlb 10      1       1
+pids    5       5       1
+rdma    4       1       1
+ramya@ramya-Ubuntu:/proc$
+
+
+--------------------------------------------------
+Can change permissions of files wihin the sandbox
+--------------------------------------------------
+
+ramya@ramya-Ubuntu:~$ chmod 777 pox/
+ramya@ramya-Ubuntu:~$ ls
+Algm          CN       Documents  examples.desktop  ip_project             mininet  new_result  oftest    OS        pox     result  Templates
+arp_spoofing  Desktop  Downloads  galatine          list_running_procs.sh  Music    oflops      openflow  Pictures  Public  SE      Videos
+ramya@ramya-Ubuntu:~$
+
+
+===========================================
+Running application enforcing sandbox mode
+===========================================
+
+ramya@ramya-Ubuntu:~$ flatpak ps
+Instance   PID  Application Runtime
+2569223299 6145 org.vim.Vim org.freedesktop.Platform   ------------------> runnig as <flatpak run --sandbox org.vim.Vim>
+3385366075 5648 org.vim.Vim org.freedesktop.Platform
+
+ramya@ramya-Ubuntu:~$ flatpak enter 3452398745 /bin/bash
+[📦 org.vim.Vim ~]$ ls    --------------> doesnt list the host directories
+[📦 org.vim.Vim ~]$ ps -ae
+  PID TTY          TIME CMD
+    1 ?        00:00:00 flatpak-bwrap
+    2 ?        00:00:00 vim
+    3 ?        00:00:00 bash
+    5 ?        00:00:00 ps
+[📦 org.vim.Vim ~]
+
+[📦 org.vim.Vim ~]$ iptables   ----------------------> although exists in the underlying host
+bash: iptables: command not found
+
