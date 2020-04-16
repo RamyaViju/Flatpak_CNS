@@ -1,0 +1,661 @@
+---- Installing frogr ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-videos;xdg-documents;xdg-pictures;
+
+---- Installing Geeqie ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=host;
+
+---- Installing Glimpse ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.FileManager1=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+---- Installing GNU Image Manipulation Program ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=host;xdg-config/GIMP;/tmp;xdg-config/gtk-3.0;xdg-run/gvfs;
+
+[Session Bus Policy]
+org.freedesktop.FileManager1=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+---- Installing Goxel ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing GrafX2 ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing Gravit Designer ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=home;
+
+---- Installing ImCompressor ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=home;
+
+---- Installing ImEditor ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+
+---- Installing Inkscape ------
+[Context]
+shared=ipc;
+sockets=x11;
+filesystems=host;
+
+---- Installing KolourPaint ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;cups;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+
+---- Installing Krita ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[System Bus Policy]
+org.freedesktop.ColorManager=talk
+
+[Environment]
+TMPDIR=/var/tmp
+PYTHONPATH=/app/lib/python3/dist-packages
+
+---- Installing KXStitch ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing LibreSprite ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=home;
+
+---- Installing Luminance HDR ------
+[Context]
+shared=network;ipc;
+sockets=x11;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Manga Reader ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Master PDF Editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Material Maker ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=home;
+
+---- Installing MyPaint ------
+[Context]
+shared=ipc;
+sockets=x11;
+filesystems=home;
+
+---- Installing Natron ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=host;
+
+---- Installing nomacs - Image Lounge ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OCRFeeder ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;all;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;xdg-run/gvfs:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.DBus=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.freedesktop.DBus.Peer.Ping=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+org.freedesktop.DBus=talk
+org.freedesktop.DBus.Peer.Ping=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+DBUS_FATAL_WARNINGS=0
+
+---- Installing Okular ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;cups;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+
+---- Installing OpenSCAD ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OpenToonz ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+LD_LIBRARY_PATH=/app/lib:/app/lib/opentoonz
+
+---- Installing PDF Tricks ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Photo Editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing Photoflare ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+
+---- Installing PhotoQt Image Viewer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Photos ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=xdg-download;xdg-pictures;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.Housekeeping=talk
+com.intel.dleyna-renderer=talk
+org.gnome.ControlCenter=talk
+org.gtk.vfs.*=talk
+org.gnome.SettingsDaemon=talk
+org.gtk.vfs=talk
+org.freedesktop.Tracker1.Miner.Extract=talk
+org.freedesktop.Tracker1=talk
+org.freedesktop.FileManager1=talk
+
+[Environment]
+TRACKER_SPARQL_BACKEND=bus
+
+---- Installing Pinta ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-run/dconf;xdg-run/gvfs:ro;xdg-public-share;xdg-pictures;xdg-download;xdg-desktop;xdg-templates;xdg-documents;/run/media;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Pixelorama ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=home;
+
+---- Installing Quixel Bridge ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-documents;
+
+---- Installing RawTherapee ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=/tmp;home;xdg-run/gvfs:ro;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.freedesktop.Flatpak=talk
+
+---- Installing Scans to PDF ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+DJPDF_PLATFORM=flatpak
+
+---- Installing Scan Tailor ------
+[Context]
+shared=ipc;
+sockets=x11;
+filesystems=host;
+
+---- Installing ScanTailor Advanced ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Scribus ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;cups;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+
+---- Installing Shotwell ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=all;
+filesystems=xdg-run/dconf;/media;/run/media;xdg-download;~/.config/dconf:ro;xdg-pictures;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.FileManager1=talk
+org.gtk.vfs.*=talk
+org.gnome.SettingsDaemon=talk
+org.gtk.vfs=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+GSETTINGS_BACKEND=dconf
+
+---- Installing SvgVi ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Sweet Home 3D ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+---- Installing Synfig Studio ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=host;
+
+---- Installing Tiled ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Titania X3D Editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+---- Installing VueScan ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-documents;xdg-pictures;
+persistent=.;.vuescan;
+
+---- Installing Wings 3D ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing XnConvert ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing XnRetro ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing XnSketch ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing XnView Multi Platform ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;xdg-run/gvfs:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+=================== Installing flathub's Communiechoion & News appliechoions (total of 102) ========================
+---- Installing AnyDesk ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+---- Installing Authentiechoor ------
+
+---- Installing Beaker ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing Birdtray ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;~/.thunderbird;~/.var/app/org.mozilla.Thunderbird/.thunderbird;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.kde.StatusNotifierItem-2-2=own
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Bitcoin Core ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Blink ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Blue Jeans ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-videos;
+persistent=.config;.macromedia;
+
+---- Installing Brosix ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=home;
+
+---- Installing Cawbird ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+
+---- Installing Claws-Mail ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+[Session Bus Policy]
+org.gnome.keyring.SystemPrompter=talk
+
+---- Installing Comic Sticks ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Daty ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;xdg-run/gvfs;
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing DavMail ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=home;
+
+[Environment]
+JAVA_HOME=/app/jre
+
+---- Installing Delta Chat ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing Discord ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-videos:ro;xdg-download;xdg-pictures:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.portal.Fcitx=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing Dropbox ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+filesystems=/tmp;home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.kde.*=own
+org.freedesktop.Notifications=talk
+
+---- Installing Electrum ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+persistent=.electrum;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
