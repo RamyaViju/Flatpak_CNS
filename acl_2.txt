@@ -1,0 +1,794 @@
+---- Installing Postman ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+filesystems=home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Processing IDE ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=home;
+
+---- Installing PyCharm-Community ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;session-bus;
+devices=all;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
+
+---- Installing PyCharm-Professional ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;session-bus;
+devices=all;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
+
+---- Installing Pyzo ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing quickDocs ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+
+---- Installing Regex Tester ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Repomaker ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+PATH=/app/bin:/usr/bin:/app/java-9-openjdk/bin
+JAVA_HOME=/app/java-9-openjdk
+
+---- Installing Rider ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;session-bus;
+devices=all;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+RIDER_JDK=${FLATPAK_DEST}/extra/rider/jre64
+
+---- Installing Robocode ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+[Environment]
+JAVA=/app/jdk/bin/java
+PATH=/usr/bin:/app/bin:/app/jdk/bin
+JAVA_HOME=/app/jdk
+
+---- Installing Scratch ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing Sequeler ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+filesystems=~/.ssh/:ro;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+
+---- Installing SHADERed ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=home;
+
+---- Installing SLADE ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing SmartGit ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+devices=dri;
+filesystems=host;xdg-run/gnupg:ro;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.gnome.keyring.SystemPrompter=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+SMARTGIT_JAVA_HOME=/app/extra/smartgit/jre
+
+---- Installing SmartSynchronize ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+SMARTSYNCHRONIZE_JAVA_HOME=/app/extra/smartsynchronize/jre
+
+---- Installing Sublime Merge ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+filesystems=host;
+
+[Session Bus Policy]
+com.sublimemerge=own
+
+---- Installing Sublime Text ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon=talk
+
+[Environment]
+PYTHONPATH=/app/utils/lib/python3.7/site-packages
+PATH=/app/utils/bin:/app/sublime_merge/bin:/app/bin:/usr/bin
+
+---- Installing Textosaurus ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Titania X3D Editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+---- Installing Turtlico ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=host;
+
+[Environment]
+PYTHONPATH=/usr/lib/python3.7/site-packages
+GPIOZERO_PIN_FACTORY=native
+
+---- Installing Unity Hub ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+features=multiarch;
+filesystems=host;
+
+[Session Bus Policy]
+org.gnome.Software=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+
+---- Installing Visual Studio Code ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;ssh-auth;
+devices=all;
+features=devel;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+NPM_CONFIG_GLOBALCONFIG=/app/etc/npmrc
+LD_LIBRARY_PATH=/app/lib
+
+---- Installing Visual Studio Code - OSS ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;ssh-auth;
+devices=dri;
+filesystems=host;
+persistent=.vscode-oss;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+---- Installing WebStorm ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+WEBSTORM_JDK=/app/extra/webstorm/jre64
+
+---- Installing Zeal ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing ZevDocs ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;host:ro;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+=================== Installing flathub's Eduechoion appliechoions (total of 57) ========================
+---- Installing Abacus ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Abacus.activity
+SUGAR_BUNDLE_ID=org.sugarlabs.AbacusActivity
+
+---- Installing Anki ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing BibleTime ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+persistent=.bibletime;.sword;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Chart ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Chart.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Chart
+
+---- Installing Colobot ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Elliptic Curve Plotter ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Engauge Digitizer ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Etoys ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+persistent=.etoys;Etoys;
+
+---- Installing Finance ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Finance.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Finance
+
+---- Installing FractionBounce ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/FractionBounce.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.FractionBounce
+
+---- Installing FreeCAD ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+PYTHONPATH=/app/lib/python2.7/site-packages
+
+---- Installing GCompris ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Genius ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+persistent=.gnome2;
+
+[Session Bus Policy]
+org.gnome.genius=own
+
+---- Installing GeoGebra ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing GNU Octave ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Flatpak=talk
+
+[Environment]
+PATH=/app/bin:/usr/bin:/app/jre/bin
+OCTAVE_HOME=/app
+CPPFLAGS=-I/app/include
+LDFLAGS=-L/app/lib
+
+---- Installing Gpredict ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+persistent=.config/Gpredict;
+
+---- Installing Hopsan ------
+[Context]
+shared=network;ipc;
+sockets=x11;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing InVesalius ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=/media;xdg-run/dconf;/run/media;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing JOSM ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=xdg-download;
+
+[Environment]
+PATH=/usr/bin:/app/bin:/app/jre/bin
+JAVA_HOME=/app/jre
+
+---- Installing Kalzium ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KBruch ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KGeography ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KHangMan ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Kiwix ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Klavaro ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+---- Installing Kolibri ------
+[Context]
+shared=network;
+persistent=.kolibri;
+
+---- Installing KTouch ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing KWordQuiz ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing LeoCAD ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Measure ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Measure.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Measure
+
+---- Installing Mendeley ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=/tmp;home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Meteo ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+
+[System Bus Policy]
+org.freedesktop.GeoClue2=talk
+
+---- Installing Midnightmare Teddy ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing mprime ------
+[Context]
+shared=network;
+
+---- Installing Music Keyboard ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/MusicKeyboard.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.MusicKeyboard
+
+---- Installing Nootka ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OpenBoard ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Othman ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Physics ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Physics.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Physics
+
+---- Installing QGIS Desktop ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+LD_LIBRARY_PATH=/app/lib:/app/grass76/lib
+
+---- Installing Read ETexts ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/ReadETexts.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.ReadETexts
+
+---- Installing Sliderule ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Sliderule.activity
+SUGAR_BUNDLE_ID=org.sugarlabs.Sliderule
+
+---- Installing Speak ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Speak.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.Speak
+
+---- Installing Stellarium ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Story ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Story.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.StoryActivity
+
+---- Installing Thymio Suite ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing TurtleBlocks ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Tux, of Math Command ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.t4k_common;.tuxmath;
+
