@@ -1,0 +1,1183 @@
+---- Installing RetroShare-gui ------
+[Context]
+shared=network;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+persistent=.retroshare;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Riot ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-download;xdg-run/keyring;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.portal.Fcitx=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Rocket.Chat ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-download;xdg-documents;xdg-pictures;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Roger Router ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.gnome.evolution.dataserver.AddressBook9=talk
+org.gnome.evolution.dataserver.Sources5=talk
+com.canonical.indicator.application=talk
+org.gnome.evolution.dataserver.Subprocess.Backend.*=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.secrets=talk
+org.gnome.evolution.dataserver.Calendar7=talk
+org.gnome.OnlineAccounts=talk
+
+---- Installing RSS Guard ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;xdg-download;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Shadowsocks-Qt5 ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+persistent=.config/shadowsocks-qt5;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Signal Desktop ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+---- Installing siptop ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-videos:ro;xdg-download;xdg-documents:ro;xdg-pictures:ro;xdg-music:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing Skype ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-download;home:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.secrets=talk
+org.gnome.GConf=talk
+org.gtk.Notifications=talk
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.NetworkManager=talk
+org.bluez=talk
+org.freedesktop.login1=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing Slack ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-videos:ro;xdg-download;xdg-documents:ro;xdg-pictures:ro;xdg-music:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing SparkleShare ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.indicator.application=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Spectral ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;xdg-download;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Spectral IDF ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;xdg-download;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Srain ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=home:ro;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+
+---- Installing Syncthing GTK ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=host;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+
+---- Installing Tangram ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing teams-for-linux ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+org.gtk.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing TeamSpeak ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-download;
+persistent=.ts3client;
+
+[Environment]
+SSL_CERT_DIR=/etc/ssl/certs
+
+---- Installing Telegram Desktop ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-download;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+com.canonical.AppMenu.Registrar=talk
+com.canonical.indicator.application=talk
+org.freedesktop.Notifications=talk
+com.canonical.Unity=talk
+org.freedesktop.portal.Fcitx=talk
+org.kde.StatusNotifierWatcher=talk
+org.ayatana.indicator.application=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+
+---- Installing Thunderbird ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;pcsc;
+devices=dri;
+filesystems=xdg-public-share:ro;xdg-download;
+persistent=.thunderbird;
+
+[Session Bus Policy]
+org.a11y.*=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Tootle ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Tor Browser Launcher ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-download;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Transmission ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.kde.StatusNotifierWatcher=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Tremotesf ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.FileManager1=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Tutanota ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing VergeCurrency ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing VGrive ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing Viber ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-videos;~/.ViberPC:create;xdg-documents;xdg-download;xdg-pictures;xdg-desktop;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing Video Downloader ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=xdg-run/dconf;xdg-download/VideoDownloader:create;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing VServer ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing WebTorrent ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=/tmp;home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing What IP ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Wire ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;all;
+filesystems=home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.portal.Fcitx=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Wireshark ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;xdg-public-share;home:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Zoom ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=home;
+
+[Session Bus Policy]
+org.kde.*=own
+
+[Environment]
+QT_QPA_PLATFORM=
+
+---- Installing Zulip ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-download;xdg-documents;xdg-pictures;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+=================== Installing flathub's Productivity appliechoions (total of 67) ========================
+---- Installing AbiWord ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gtk.vfs.*=talk
+
+---- Installing Agenda ------
+[Context]
+shared=ipc;
+sockets=x11;
+
+---- Installing Bookworm ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing Calendar ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=home;
+
+[Session Bus Policy]
+org.gnome.evolution.dataserver.Sources5=talk
+org.gnome.evolution.dataserver.AddressBook9=talk
+org.gnome.SettingsDaemon.Color=talk
+org.gnome.ControlCenter=talk
+org.gnome.OnlineAccounts=talk
+org.gnome.evolution.dataserver.Calendar8=talk
+org.gnome.evolution.dataserver.Subprocess.Backend.*=talk
+
+[System Bus Policy]
+org.freedesktop.timedate1=talk
+org.freedesktop.login1=talk
+org.freedesktop.GeoClue2=talk
+
+---- Installing Calibre ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[System Bus Policy]
+org.freedesktop.NetworkManager=talk
+org.freedesktop.UDisks2=talk
+
+---- Installing Coin ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing ConfClerk ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Contacts ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+devices=all;
+filesystems=xdg-data/pixmaps/faces;
+
+[Session Bus Policy]
+org.gnome.evolution.dataserver.Sources5=talk
+org.gnome.evolution.dataserver.AddressBook10=talk
+org.gnome.OnlineAccounts=talk
+org.gnome.evolution.dataserver.Subprocess.Backend.*=talk
+org.gnome.ControlCenter=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Datovka ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Evolution ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;~/.gnupg;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gnome.keyring.SystemPrompter=talk
+org.freedesktop.secrets=talk
+org.gnome.OnlineAccounts=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing FocusWriter ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Foliate ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk
+
+---- Installing Formiko ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=/media;home;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+
+---- Installing Gahshomar ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing GEstimator ------
+
+---- Installing ghostwriter ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QTWEBENGINE_DISABLE_SANDBOX=1
+
+---- Installing Give Me Lyrics ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+
+[Session Bus Policy]
+org.freedesktop.DBus=talk
+org.mpris.MediaPlayer2.*=talk
+
+---- Installing gLabels ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+---- Installing GNOME Dictionary ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-documents;
+
+---- Installing GnuCash ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing HomeBank ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing Jameica ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+
+[Environment]
+PATH=/usr/bin:/app/bin:/app/jre/bin
+JAVA_HOME=/app/jre
+
+---- Installing Kapow Punch Clock ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Komikku ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.Color=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Kontact ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.kalarm=own
+org.kde.Solid.PowerManagement=talk
+org.kde.knotify=talk
+org.kde.akregator=own
+org.kde.korgac=own
+org.kde.kontact=own
+org.kde.kmail2=own
+org.kde.akonadiconsole.*=own
+org.kde.accountwizard=own
+org.freedesktop.Akonadi.Control.*=own
+org.kde.JobViewServer=talk
+org.freedesktop.Akonadi.Agent.*=own
+org.kde.knotes=own
+com.canonical.AppMenu.Registrar=talk
+org.kde.korganizer=own
+org.kde.kioexec.*=own
+org.kde.kmail=own
+org.kde.kded5=talk
+org.kde.kpasswdserver=talk
+org.kde.kaddressbook=own
+org.kde.sieveeditor=own
+org.kde.pim.*=own
+org.freedesktop.Akonadi.Resource.*=own
+org.kde.kcookiejar5=talk
+org.freedesktop.Akonadi.*=own
+org.kde.kglobalaccel=talk
+org.kde.kwalletd5=talk
+org.kde.klauncher5=talk
+org.kde.pimsettingexporter=own
+org.freedesktop.Akonadi=own
+
+[System Bus Policy]
+org.freedesktop.NetworkManager=talk
+
+[Environment]
+SASL_PATH=/app/lib/sasl2
+QT_QPA_PLATFORM=xcb
+
+---- Installing Labyrinth ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+
+---- Installing LibreOffice ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.libreoffice.LibreOfficeIpc0=own
+
+[Environment]
+GIO_EXTRA_MODULES=/app/lib/gio/modules
+LIBO_FLATPAK=1
+JAVA_HOME=/app/jre
+
+---- Installing Mark Text ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;host;/tmp;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.portal.Fcitx=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Moneta ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+
+---- Installing Notes-Up ------
+[Context]
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+com.github.philip-scott.notes-up=own
+org.gtk.vfs=talk
+org.gtk.vfs.*=talk
+
+---- Installing NovProg ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing O20.Word ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-documents/O20:create;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing ONLYOFFICE Desktop Editors ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-videos;xdg-download;xdg-documents;xdg-pictures;xdg-desktop;
+
+---- Installing Paperwork ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=all;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+persistent=.python-eggs;
+
+[Session Bus Policy]
+org.freedesktop.FileManager1=talk
+ca.desrt.dconf=talk
+org.freedesktop.Notifications=talk
+work.openpaper.paperwork=own
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing PDF Arranger ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+---- Installing PDF Mix Tool ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing PDF Slicer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=host;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+---- Installing ProtonMail Bridge ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=~/.local/state/protonmail/bridge;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+
+---- Installing RedNotebook ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+---- Installing Setzer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+TEXMFCACHE=$XDG_CACHE_HOME
+DCONF_USER_CONFIG_DIR=.config/dconf
+LC_ALL=C
+PATH=/app/bin:/usr/bin:/app/bin/x86_64-linux
+TEXINPUTS=.:~/texmf/:
+
+---- Installing Skrooge ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Spice-Up ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=all;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+
+---- Installing Stpa-documentation-tool ------
+[Context]
+sockets=x11;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;xdg-download;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Texmaker ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-documents;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TEXMFCACHE=$XDG_CACHE_HOME
+PATH=/app/texlive/bin/x86_64-linux:/app/bin:/usr/bin
+
+---- Installing TeXstudio ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TEXMFCACHE=$XDG_CACHE_HOME
+TMPDIR=/var/tmp
+LC_ALL=C
+PATH=/app/jre/bin:/usr/bin:/app/bin:/app/bin/x86_64-linux
+
+---- Installing TeXworks ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TEXMFCACHE=$XDG_CACHE_HOME
+SESSION_MANAGER=
+PATH=/app/texlive/bin/x86_64-linux:/app/bin:/usr/bin
+
+---- Installing Timetable ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=host;
+
+---- Installing Toggl Desktop ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+
+---- Installing UberWriter ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+PATH=/app/extensions/TexLive/bin:/app/extensions/TexLive/2018/bin/x86_64-linux:/app/bin:/usr/bin
+
+---- Installing VergeCurrency ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing WPS Office ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-videos;/media;xdg-download;xdg-documents;/run/media;xdg-pictures;
+persistent=.kingsoft;
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing XMind 8 ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-videos;/media;xdg-download;xdg-documents;/run/media;xdg-pictures;
+
+[Environment]
+GTK_IM_MODULE=xim
+
+---- Installing XMind ZEN ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-videos;/media;xdg-download;xdg-documents;/run/media;xdg-pictures;
+
+[Environment]
+GTK_IM_MODULE=xim
+
+---- Installing Xournal++ ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+persistent=.xournalpp;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+PATH=/app/bin:/app/extensions/bin:/app/extensions/bin/x86_64-linux:/usr/bin/
+
+---- Installing Zotero ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=home;
+
+=================== Installing flathub's Science appliechoions (total of 26) ========================
+---- Installing Climaxima ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing CRUSH ------
+[Context]
+shared=network;
+sockets=x11;
+filesystems=host;
+
+[Environment]
+PATH=/app/jre/bin:/app/bin:/usr/bin
+
+---- Installing FIPS ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host:ro;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing FlashPrint ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Gwyddion ------
+[Context]
+shared=ipc;
+sockets=x11;
+
+---- Installing Hopsan ------
+[Context]
+shared=network;ipc;
+sockets=x11;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing jamovi ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing Kalzium ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Meteo ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+
+[System Bus Policy]
+org.freedesktop.GeoClue2=talk
+
+---- Installing NixView ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OSM Scout Server ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.DBus=talk
+org.osm.scout.server1=own
+
+---- Installing Porto ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+filesystems=host;
+
+---- Installing Pure Maps ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.DBus=talk
+org.osm.scout.server1=talk
+
+[System Bus Policy]
+org.freedesktop.GeoClue2=talk
+
+---- Installing RDPlot ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+PYTHONPATH=/app/lib/python3/dist-packages
+
+---- Installing Siril ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
