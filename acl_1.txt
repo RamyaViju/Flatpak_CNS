@@ -1,0 +1,1762 @@
+Created ./acl.txt
+=================== Installing flathub's Audio and Video appliechoions (total of 96) ========================
+---- Installing Adobe Flash Player ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=host:ro;xdg-run/gvfs:ro;
+
+---- Installing Asunder CD Ripper ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=all;
+filesystems=xdg-download;xdg-music;
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing Audacity ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+filesystems=host;
+
+[Environment]
+ALSA_CONFIG_PATH=
+
+---- Installing Avidemux ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+LD_LIBRARY_PATH=/app/lib/x86_64-linux-gnu/:/app/lib/i386-linux-gnu/:/app/lib64:/app/lib
+
+---- Installing AVI MetaEdit ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing BWF MetaEdit ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Byte ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+---- Installing Celluloid ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=xdg-pictures;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+[Environment]
+LC_NUMERIC=C
+
+---- Installing Cheese ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=xdg-videos;xdg-pictures;
+
+---- Installing Chibi Tracker ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+filesystems=home;
+
+---- Installing Ciano ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+---- Installing Cinema ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-videos;/media;/run/media;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.mpris.MediaPlayer2=talk
+org.freedesktop.thumbnails.Thumbnailer1=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0
+
+---- Installing Clementine Music Player ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;/media;/run/media;/mnt;xdg-music;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.Player=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.kde.StatusNotifierWatcher=talk
+org.wiimotedev.deviceEvents=talk
+org.mpris.MediaPlayer2.clementine=own
+org.kde.StatusNotifierItem-2-2=own
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+org.freedesktop.UDisks2=talk
+
+---- Installing Cozy ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+filesystems=host;xdg-run/gvfs;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.Cozy=own
+org.gtk.vfs.*=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Cumulonimbus ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing DV Analyzer ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Elisa ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.kde.baloo=talk
+org.mpris.MediaPlayer2.elisa=own
+
+[Environment]
+BALOO_DB_PATH=.local/share/baloo
+
+---- Installing Ex Falso ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=host;/tmp;xdg-config/gtk-3.0:ro;
+
+[Session Bus Policy]
+org.enlightenment.wm.service=talk
+org.freedesktop.FileManager1=talk
+org.gnome.SessionManager=talk
+org.xfce.FileManager=talk
+org.kde.plasmashell=talk
+com.canonical.Unity.Launcher=talk
+
+---- Installing FFaudioConverter ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Falcon ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-download;xdg-music;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing Floodlight Presenter ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=host:ro;
+
+---- Installing Flowblade ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=host;
+
+[Environment]
+FREI0R_PATH=/app/lib/frei0r-1
+LADSPA_PATH=/app/lib/ladspa
+
+---- Installing FMIT ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+ALSA_CONFIG_PATH=
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+
+---- Installing fre:ac ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing FreeTube ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-download;
+
+[Environment]
+TZ=UTC
+
+---- Installing GabTag ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Gaupol ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-videos;home;
+
+[Environment]
+GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0
+
+---- Installing Girens for Plex ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.secrets=talk
+org.mpris.MediaPlayer2.Girens=own
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Glide ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Environment]
+GST_VAAPI_ALL_DRIVERS=1
+LIBVA_DRIVER_NAME=iHD
+
+---- Installing GNOME Music ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-music;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.freedesktop.Tracker1=talk
+org.gtk.vfs.*=talk
+org.gnome.OnlineAccounts=talk
+org.gtk.vfs=talk
+org.mpris.MediaPlayer2.GnomeMusic=own
+
+[System Bus Policy]
+org.freedesktop.login1=talk
+
+[Environment]
+TRACKER_SPARQL_BACKEND=bus
+
+---- Installing GNOME Twitch ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+[Environment]
+GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0
+
+---- Installing Goodvibes ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.mpris.MediaPlayer2.Goodvibes=own
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Google Play Music Desktop Player ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-run/discord:create;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.mpris.MediaPlayer2.google_play_music_desktop_player=own
+com.canonical.indicator.application=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+XDG_CURRENT_DESKTOP=Unity
+
+---- Installing gPodder ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+[Session Bus Policy]
+org.gpodder=own
+org.gtk.vfs.*=talk
+
+---- Installing Gradio ------
+
+---- Installing GSequencer ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=host;
+
+[Environment]
+LV2_PATH=/app/lib/lv2
+LADSPA_PATH=/app/lib/ladspa
+DSSI_PATH=/app/lib/dssi
+AGS_LICENSE_FILENAME=/app/share/gsequencer/GPL-3
+AGS_ONLINE_HELP_START_FILENAME=file:///app/share/doc/gsequencer/html/index.html
+
+---- Installing Gydl ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-download;
+
+---- Installing HandBrake ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;host;xdg-run/gvfs;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gtk.vfs.*=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+GIO_EXTRA_MODULES=/app/lib/gio/modules
+PATH=/app/bin:/usr/bin:/app/extensions/bin
+JAVA_HOME=/app/extensions/jre
+
+---- Installing Haruna Video Player ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.ScreenSaver=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+LC_NUMERIC=C
+
+---- Installing Hydrogen ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+LADSPA_PATH=/app/lib/ladspa
+ALSA_CONFIG_PATH=
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+
+---- Installing Jellyfin MPV Shim ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+
+[Environment]
+LC_NUMERIC=C
+
+---- Installing Karapulse ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=host;
+
+---- Installing Kdenlive ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+FREI0R_PATH=/app/lib/frei0r-1
+TMPDIR=/var/tmp
+LADSPA_PATH=/app/lib/ladspa
+
+---- Installing Kodi ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=xdg-videos;/media;/run/media;/mnt;xdg-pictures;xdg-music;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+org.bluez=talk
+org.freedesktop.UDisks2=talk
+org.freedesktop.login1=talk
+org.freedesktop.UPower=talk
+
+---- Installing LBRY ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+org.gnome.SessionManager=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+---- Installing LMMS ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+LD_LIBRARY_PATH=/app/lib:/app/lib/libgig
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+TMPDIR=/var/tmp
+ALSA_CONFIG_PATH=
+
+---- Installing Lollypop ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.Lollypop=own
+org.freedesktop.Notifications=talk
+org.freedesktop.secrets=talk
+org.gnome.OnlineAccounts=talk
+org.gtk.vfs=talk
+org.gtk.vfs.*=talk
+org.freedesktop.Flatpak=talk
+
+---- Installing Lyrics ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;session-bus;
+
+---- Installing MakeMKV ------
+
+---- Installing MediaConch ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing MediaInfo ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=host:ro;
+
+---- Installing Melody ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.mpris.MediaPlayer2=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.mpris.MediaPlayer2.com.github.artemanufrij.playmymusic=own
+org.freedesktop.Notifications=talk
+
+---- Installing Microsoft Teams ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-videos:ro;xdg-download;xdg-documents:ro;xdg-pictures:ro;xdg-music:ro;
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+TZ=
+
+---- Installing Minitube ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Mixxx DJ Software ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-music:ro;
+persistent=.mixxx;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[System Bus Policy]
+org.freedesktop.UPower=talk
+
+[Environment]
+LADSPA_PATH=${FLATPAK_DEST}/lib/ladspa
+ALSA_CONFIG_PATH=
+
+---- Installing MKVToolNix ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing MoonPlayer ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-videos;xdg-download;xdg-pictures;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+LC_NUMERIC=C
+
+---- Installing Movie Monad ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;host;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+ca.desrt.dconf=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing MOV MetaEdit ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing MusE ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+ALSA_CONFIG_PATH=
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+
+---- Installing MuseScore ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_QPA_PLATFORM=xcb
+TMPDIR=/var/tmp
+
+---- Installing MusicBrainz Picard ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;/tmp;home;xdg-music;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Netease Cloud Music ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-music;
+persistent=.config;.cache;.pki;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.netease-cloud-music=own
+
+---- Installing noson ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-music;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.mpris.MediaPlayer2.Player=talk
+org.mpris.MediaPlayer2.noson.*=own
+org.freedesktop.Notifications=talk
+
+---- Installing OBS Studio ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;host;xdg-run/obs-xdg-portal:create;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+org.mate.SessionManager=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+org.freedesktop.PowerManagement.Inhibit=talk
+org.kde.StatusNotifierWatcher=talk
+org.gnome.SessionManager=talk
+org.kde.StatusNotifierItem-2-2=own
+
+---- Installing Olive ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OpenShot Video Editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+PYTHONPATH=/app/lib/python3/dist-packages
+
+---- Installing Parlatype ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+filesystems=home:ro;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.freedesktop.secrets=talk
+
+---- Installing Peek ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.FileManager1=talk
+org.gnome.Shell.Screencast=talk
+
+[Environment]
+GDK_BACKEND=x11
+DCONF_USER_CONFIG_DIR=.config/dconf
+LD_LIBRARY_PATH=/app/lib
+
+---- Installing Pencil2D ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Pithos ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.mate.SettingsDaemon=talk
+org.freedesktop.secrets=talk
+org.kde.StatusNotifierWatcher=talk
+
+---- Installing Pitivi ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+GST_PLUGIN_PATH=/app/lib/codecs/lib/gstreamer-1.0
+GST_ENCODING_TARGET_PATH=/app/share/gstreamer-1.0/encoding-profiles/:/app/share/pitivi/encoding-profiles/
+
+---- Installing Play it Slowly ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+filesystems=home:ro;
+
+---- Installing Podcasts ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+
+---- Installing projectM ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing PulseAudio Volume Control ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+
+---- Installing PulseEffects ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+
+[Environment]
+LV2_PATH=/app/lib/lv2
+LADSPA_PATH=/app/lib/ladspa
+
+---- Installing Purr Data ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;all;
+filesystems=host;
+
+---- Installing QCTools ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Quod Libet ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=xdg-run/dconf;host;/tmp;xdg-config/gtk-3.0:ro;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.gnome.UPnP.MediaServer2.QuodLibet=own
+org.mpris.MediaPlayer2.quodlibet=own
+org.gajim.dbus=talk
+org.enlightenment.wm.service=talk
+org.freedesktop.Avahi=talk
+org.freedesktop.Notifications=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+ca.desrt.dconf=talk
+org.gnome.ScreenSaver=talk
+org.freedesktop.Telepathy.AccountManager=talk
+org.mate.SettingsDaemon=talk
+org.mpris.quodlibet=own
+com.canonical.Unity.Launcher=talk
+org.gnome.SessionManager=talk
+org.kde.StatusNotifierWatcher=talk
+org.xfce.FileManager=talk
+org.kde.plasmashell=talk
+org.freedesktop.FileManager1=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Qwertone ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+---- Installing Rhythmbox ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;xdg-music;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.gtk.vfs.*=talk
+org.mpris.MediaPlayer2.rhythmbox=own
+org.gnome.UPnP.MediaServer2.Rhythmbox=own
+org.freedesktop.Notifications=talk
+org.gtk.vfs=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+GIO_USE_VOLUME_MONITOR=unix
+
+---- Installing Shotcut ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;shm;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+FREI0R_PATH=/app/lib/frei0r-1
+LADSPA_PATH=/app/lib/ladspa
+
+---- Installing Sound Recorder ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+filesystems=home;
+
+---- Installing Spivak ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-music;
+
+---- Installing Splash ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=host;
+
+---- Installing Sportify ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-pictures:ro;xdg-music:ro;
+
+[Session Bus Policy]
+org.gnome.SessionManager=talk
+org.mpris.MediaPlayer2.spotify=own
+org.gnome.SettingsDaemon=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+TMPDIR=/tmp
+LD_LIBRARY_PATH=/app/lib
+
+---- Installing Tauon Music Box ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=~/.config/fontconfig/:ro;xdg-download;xdg-run/app/com.discordapp.Discord:create;xdg-music;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.tauon=own
+org.freedesktop.Notifications=talk
+
+---- Installing TuxGuitar ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+JAVA=/app/jre/bin/java
+PATH=/usr/bin:/app/bin:/app/jre/bin
+JAVA_HOME=/app/jre
+
+---- Installing VapourSynth Editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-videos;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing VidCutter ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+com.canonical.AppMenu.Registrar=talk
+com.canonical.Unity.LauncherEntry=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+LC_NUMERIC=C
+LD_LIBRARY_PATH=/app/lib
+
+---- Installing Videos ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;all;
+filesystems=xdg-videos;/run/media;home;xdg-run/gvfs;
+
+[Session Bus Policy]
+org.gnome.Shell=talk
+org.mpris.MediaPlayer2.totem=own
+org.gtk.vfs.*=talk
+org.gnome.Nautilus=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.gnome.ScreenSaver=talk
+org.gtk.vfs=talk
+org.gnome.SessionManager=talk
+org.freedesktop.Tracker1=talk
+org.gnome.OnlineAccounts=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+
+[Environment]
+TRACKER_SPARQL_BACKEND=bus
+GST_PLUGIN_PATH=/app/lib/codecs/lib/gstreamer-1.0
+
+---- Installing VLC ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;xdg-run/gvfs;~/.config/dconf:ro;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+org.kde.kwalletd5=talk
+org.mpris.MediaPlayer2.Player=talk
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.Notifications=talk
+org.kde.kwalletd=talk
+ca.desrt.dconf=talk
+org.freedesktop.secrets=talk
+org.mpris.MediaPlayer2.vlc=own
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing VMPK ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+ALSA_CONFIG_PATH=
+
+---- Installing Vocal ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-data/vocal:create;/tmp;home;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.freedesktop.Notifications=talk
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.gtk.vfs=talk
+org.mate.SettingsDaemon=talk
+org.gnome.SessionManager=talk
+org.freedesktop.secrets=talk
+org.xfce.SessionManager=talk
+
+---- Installing YUView ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+QT_NO_FT_CACHE=1
+
+=================== Installing flathub's Developer Tools appliechoions (total of 83) ========================
+---- Installing adventure-editor ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Environment]
+PATH=/usr/bin:/app/bin:/app/jdk/bin
+JAVA_HOME=/app/jdk
+
+---- Installing Android Studio ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;ssh-auth;
+devices=all;
+features=multiarch;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+JAVA_HOME=/app/extra/android-studio/jre
+
+---- Installing Arduino IDE ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=home;
+
+---- Installing Atom ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;ssh-auth;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+org.gtk.vfs.*=talk
+org.freedesktop.secrets=talk
+org.gtk.vfs=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+TMPDIR=/var/tmp
+ELECTRON_TRASH=this-is-a-workaround
+
+---- Installing Bluefish ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+---- Installing BlueJ ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+PATH=/app/jre/bin:/usr/bin:/app/bin
+
+---- Installing Botfather ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+com.canonical.AppMenu.Registrar=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Brackets ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;session-bus;system-bus;
+devices=dri;
+filesystems=host;
+
+[Session Bus Policy]
+org.gtk.vfs.*=talk
+org.gnome.GConf=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Builder ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;session-bus;system-bus;fallback-x11;ssh-auth;
+devices=dri;
+features=devel;
+filesystems=host;~/.local/share/flatpak;xdg-run/keyring;xdg-data/meson;home;/var/lib/flatpak;
+
+[Session Bus Policy]
+org.freedesktop.FileManager1=talk
+org.gnome.SettingsDaemon.Color=talk
+org.gnome.CodeAssist.v1.*=talk
+org.gtk.vfs.*=talk
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.PackageKit=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+org.gnome.Sysprof3=talk
+org.freedesktop.PolicyKit1=talk
+
+[Environment]
+G_SLICE=always-malloc
+
+---- Installing Bustle ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;session-bus;system-bus;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Code::Blocks IDE ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+features=devel;
+filesystems=home;
+
+---- Installing DataGrip ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DATAGRIP_JDK=/app/extra/datagrip/jre64
+
+---- Installing DBeaver Community ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[Environment]
+PATH=/app/clients/bin:/app/jre/bin:/usr/bin
+
+---- Installing Devhelp ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;host:ro;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing D-Feet ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;session-bus;system-bus;fallback-x11;
+
+---- Installing e2designer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing EasySSH ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+devices=dri;
+filesystems=home;
+
+---- Installing Eclipse 4DIAC IDE ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;host;
+persistent=/app/;
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+JAVA_HOME=/app/jre
+
+---- Installing Eclipse IDE for Eclipse Committers ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;session-bus;
+devices=dri;
+features=devel;
+filesystems=host;
+
+[Environment]
+PATH=/app/bin:/app/jdk/bin:/app/node/bin:/usr/bin
+
+---- Installing Eclipse IDE for Java Developers ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;session-bus;
+devices=dri;
+features=devel;
+filesystems=host;
+
+[Environment]
+PATH=/app/bin:/app/jdk/bin:/app/node/bin:/usr/bin
+
+---- Installing esys-escript ------
+[Context]
+shared=network;
+filesystems=home;
+
+---- Installing FlashPrint ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Flatpak Developer Demo ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Fritzing ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-documents;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Gaphor ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=host;
+
+---- Installing Geany ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=host;xdg-run/geany:create;
+
+---- Installing GetIt ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing gitg ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+filesystems=xdg-run/dconf;host;xdg-run/keyring;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.secrets=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing GitKraken ------
+
+---- Installing Glade ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=host;
+
+---- Installing GNOME Boxes ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=/var/lib/AccountsService/icons:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.Tracker1=talk
+org.freedesktop.secrets=talk
+
+[System Bus Policy]
+org.freedesktop.timedate1=talk
+org.freedesktop.Accounts=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing GNOME Hex Editor ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=host;
+
+---- Installing Gnomit ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing GNU Emacs ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+filesystems=host;/tmp;/var/tmp;
+
+---- Installing Godot ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk
+
+---- Installing GraphUI ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+---- Installing GStreamer Debug Viewer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Gtranslator ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Hardware Probe ------
+[Context]
+shared=network;
+devices=all;
+filesystems=host:ro;/dev;/sys:ro;/var/log:ro;
+
+[Environment]
+PERL5LIB=/app/share/perl5:/app/lib/x86_64-linux-gnu/perl-base:/app/lib/i386-linux-gnu/perl-base
+LD_LIBRARY_PATH=/app/lib/x86_64-linux-gnu/:/app/lib/i386-linux-gnu/:/app/lib64:/app/lib
+LC_ALL=C
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/app/bin:/app/sbin
+
+---- Installing Hatch Previewer ------
+[Context]
+shared=ipc;
+sockets=x11;
+devices=dri;
+filesystems=home:ro;
+
+---- Installing Horizon EDA ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=home;
+
+---- Installing Howl ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+io.howl.*=own
+org.freedesktop.Flatpak=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Image Optimizer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=home;
+
+---- Installing Inform 7 ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+filesystems=~/Inform/:create;
+
+---- Installing IntelliJ IDEA Community ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+devices=dri;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+IDEA_JDK=/app/idea-IC/jre64
+
+---- Installing IntelliJ IDEA Ultimate ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;ssh-auth;
+devices=dri;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+IDEA_JDK=/app/extra/idea-IU/jre64
+
+---- Installing KiCad ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+filesystems=home;
+
+---- Installing LibrePCB ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Meld ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=host;
+
+---- Installing NetBeans ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;all;
+filesystems=host;xdg-run/keyring;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Notepadqq ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar.*=talk
+com.canonical.AppMenu.Registrar=talk
+ca.desrt.dconf=talk
+org.freedesktop.Flatpak=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing PhpStorm ------
+[Context]
+shared=network;ipc;
+sockets=x11;ssh-auth;
+devices=dri;
+filesystems=xdg-run/keyring;home;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+[Environment]
+PHPSTORM_JDK=/app/extra/phpstorm/jre64
+
+---- Installing Pippy ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/Pippy.activity
+SUGAR_BUNDLE_ID=org.sugarlabs.Pippy
+
+---- Installing Planner ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+[Session Bus Policy]
+org.gnome.evolution.dataserver.Sources5=talk
+org.gnome.evolution.dataserver.AddressBook9=talk
+org.gtk.vfs.*=talk
+org.gnome.evolution.dataserver.Calendar7=talk
+org.gnome.evolution.dataserver.Subprocess.Backend.*=talk
+com.github.alainm23.planner=talk
+
+---- Installing Poedit ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.freedesktop.secrets=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Postman ------
