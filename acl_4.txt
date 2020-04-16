@@ -1,0 +1,701 @@
+---- Installing Numpty Physics ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Office Runner ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+
+[System Bus Policy]
+org.freedesktop.login1=talk
+org.freedesktop.UPower=talk
+
+---- Installing OpenArena ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.openarena;
+
+---- Installing OpenClonk ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;
+persistent=.clonk;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OpenMW ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing OpenRA ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.openra;
+
+---- Installing OpenSpades ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+persistent=.local/share/openspades;
+
+---- Installing Open Surge ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;all;
+filesystems=xdg-download:ro;
+
+---- Installing OpenTTD ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=home;
+
+---- Installing Palapeli ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing PCSX2 ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;host:ro;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Pegasus ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Peg-E ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Phoenicis PlayOnLinux ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+features=multiarch;
+filesystems=xdg-download;xdg-documents;
+persistent=.Phoenicis;
+
+---- Installing Pingus ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+
+---- Installing Pioneer ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.pioneer;
+
+---- Installing Potato Guy ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Powder Toy ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+persistent=.;
+
+---- Installing PPSSPP ------
+[Context]
+shared=network;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=host:ro;
+
+---- Installing Quadrapassel ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing Red Eclipse ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.redeclipse;
+
+---- Installing RetroArch ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+features=multiarch;
+filesystems=xdg-config/kdeglobals:ro;host;
+
+[Session Bus Policy]
+org.freedesktop.ScreenSaver=talk
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Ri-li ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Robocode ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+[Environment]
+JAVA=/app/jdk/bin/java
+PATH=/usr/bin:/app/bin:/app/jdk/bin
+JAVA_HOME=/app/jdk
+
+---- Installing rRootage ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+---- Installing RuneLite ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=~/.runelite:create;
+persistent=random.dat;jagex_cl_oldschool_LIVE.dat;jagexcache;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[Environment]
+JAVA_HOME=/app/jre
+
+---- Installing RuneScape ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=Jagex;
+
+---- Installing Sauerbraten ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.sauerbraten;
+
+---- Installing ScummVM ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-documents;
+
+---- Installing Shattered Pixel Dungeon ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+persistent=.shatteredpixel;
+
+[Environment]
+PATH=/usr/bin:/app/bin:/app/jre/bin
+
+---- Installing Simsu ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Slingshot ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=dri;
+
+---- Installing Snes9x ------
+[Context]
+sockets=x11;wayland;pulseaudio;
+devices=all;
+filesystems=home;
+
+---- Installing Speed Dreams ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.speed-dreams-2;
+
+---- Installing Steam ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+features=devel;multiarch;bluetooth;
+filesystems=xdg-run/app/com.discordapp.Discord:create;xdg-pictures:ro;xdg-music:ro;
+persistent=.;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.ScreenSaver=talk
+org.freedesktop.PowerManagement=talk
+
+[System Bus Policy]
+org.freedesktop.NetworkManager=talk
+org.freedesktop.UPower=talk
+
+[Environment]
+SDL_VIDEODRIVER=
+MESA_GLSL_CACHE_DIR=
+DBUS_FATAL_WARNINGS=0
+STEAM_EXTRA_COMPAT_TOOLS_PATHS=/app/share/steam/compatibilitytools.d
+STEAM_RUNTIME_PREFER_HOST_LIBRARIES=
+ALSA_CONFIG_PATH=
+STEAM_RUNTIME=
+LC_NUMERIC=C
+TZ=
+SSL_CERT_DIR=/etc/ssl/certs
+XDG_CONFIG_DIRS=/etc/xdg:/usr/lib/x86_64-linux-gnu/GL:/usr/lib/i386-linux-gnu/GL
+PYTHONPATH=/app/utils/lib/python3.7/site-packages
+LC_COLLATE=C
+PATH=/app/bin:/app/utils/bin:/usr/bin
+
+---- Installing StepMania ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.stepmania-5.1;
+
+---- Installing Stunt Rally ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing SuperTux ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+
+---- Installing SuperTuxKart ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+
+---- Installing SuperTux - Milestone 1 ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing Swell Foop ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Taisei ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+
+---- Installing Tali ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing Tanglet ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Tanks of Freedom ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.godot;
+
+---- Installing Tank Warriors ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Teeworlds ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.teeworlds;
+
+---- Installing Teo ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing Tetzle ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing TORCS ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+persistent=.torcs;
+
+---- Installing Total Chaos ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing Tremulous ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.tremulous;
+
+---- Installing TrenchBroom ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=host;
+
+---- Installing Turtle in a Pond ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/TurtleinaPond.activity/
+SUGAR_BUNDLE_ID=org.sugarlabs.TurtlePondActivity
+
+---- Installing Tux Football ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing Tuxpuck ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing TwoFun ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Type Off ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing VICE ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Warmux ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Warzone2100 ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+persistent=.warzone2100-3.3;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing White House ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Widelands ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.widelands;
+
+---- Installing Windstille 0.2 ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=all;
+
+---- Installing WolfenDoom: Blade of Agony ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.config/gzdoom;
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+---- Installing XMoto ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Xonotic ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=all;
+persistent=.xonotic;
+
+---- Installing Yakblt ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Zandronum ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+persistent=.config/zandronum;.config/doomseeker;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+DOOMWADDIR=/app/share/games/doom
+
+=================== Installing flathub's Graphics & Photography appliechoions (total of 75) ========================
+---- Installing adriconf ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=host;
+
+---- Installing Avvie ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=xdg-download;xdg-pictures;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing Blender ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=host;
+
+---- Installing CloudCompare ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Color picker ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Coulr ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing darktable ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.gtk.vfs=talk
+org.gtk.vfs.*=talk
+
+[System Bus Policy]
+org.freedesktop.ColorManager=talk
+
+---- Installing Drawing ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing draw.io ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+filesystems=home;
+
+---- Installing Drawpile ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.freedesktop.secrets=talk
+
+[System Bus Policy]
+org.freedesktop.Avahi=talk
+
+---- Installing Evince ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=host;
+
+[Session Bus Policy]
+org.gnome.SettingsDaemon.MediaKeys=talk
+org.gnome.SessionManager=talk
+org.gnome.evince=own
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.gnome.evince.Daemon=own
+
+[Environment]
+GDK_PIXBUF_MODULE_FILE=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
+
+---- Installing Eye of GNOME ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+filesystems=host;
+
+[Environment]
+GDK_PIXBUF_MODULE_FILE=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
+
+---- Installing FontForge ------
+[Context]
+shared=ipc;
+sockets=x11;
+filesystems=host;
+
+---- Installing FotoToon ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+[Environment]
+SUGAR_BUNDLE_PATH=/app/share/sugar/activities/FotoToon.activity
+SUGAR_BUNDLE_ID=org.sugarlabs.FotoToon
+
+---- Installing frogr ------
