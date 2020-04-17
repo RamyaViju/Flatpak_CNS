@@ -3248,8 +3248,6 @@ filesystems=xdg-config/kdeglobals:ro;
 [Session Bus Policy]
 com.canonical.AppMenu.Registrar=talk
 
----- Installing Killbots ------
-
 ---- Installing KJumpingCube ------
 [Context]
 shared=ipc;
