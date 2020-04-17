@@ -7750,6 +7750,264 @@ sockets=x11;wayland;fallback-x11;
 devices=dri;
 filesystems=home;
 
+---- Installing Adobe Flash Player ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
 
+[Session Bus Policy]
+org.gnome.Shell.Screenshot=talk
+org.gnome.SettingsDaemon.Color=talk
+org.freedesktop.secrets=talk
+com.github.bilelmoussaoui.Authenticator.SearchProvider=own
+
+[Environment]
+ZBAR_PATH=/app/lib/libzbar.so
+
+---- Installing Digital Assets ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Electrip ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=xdg-run/dconf;home;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Extensions ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+org.gnome.Shell=talk
+org.gnome.Shell.Extensions=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf
+
+---- Installing Fablemaker ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Flacon ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-download;xdg-music;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+TMPDIR=/var/tmp
+
+---- Installing Forklift ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=home;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+---- Installing GitKraken ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;ssh-auth;pcsc;
+devices=dri;
+filesystems=host;xdg-run/gvfs;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+org.gtk.vfs.*=talk
+org.gtk.vfs=talk
+org.freedesktop.Flatpak=talk
+org.freedesktop.Notifications=talk
+
+---- Installing Gitter ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing Gradio ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+
+[Session Bus Policy]
+org.mpris.MediaPlayer2.gradio=own
+
+---- Installing Hackgregator ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+
+---- Installing Indicator-KDEConnect ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
+filesystems=host;
+
+[Session Bus Policy]
+org.kde.kdeconnect=talk
+org.kde.kdeconnectd=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.DBus.Proprieties=talk
+org.freedesktop.IBus=talk
+org.freedesktop.Notifications=talk
+com.github.bajoja.indicator-kdeconnect.settings=own
+
+---- Installing JASP ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;~/.config/dconf:ro;home;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Journable ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=home;
+
+---- Installing Killbots ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing MakeMKV ------
+[Context]
+shared=network;ipc;
+sockets=x11;
+devices=all;
+filesystems=xdg-config/kdeglobals:ro;xdg-run/dconf;host;~/.config/dconf:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+[Environment]
+JAVA_HOME=/app/jre
+
+---- Installing Mindustry ------
+[Context]
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+
+[Environment]
+PATH=/usr/bin:/app/bin:/app/jre/bin
+JAVA_HOME=/app/jre
+
+---- Installing Obfuscate ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+---- Installing QtSpim ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+
+---- Installing Remotely ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+
+---- Installing Seahorse ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=~/.ssh:create;~/.gnupg:create;
+
+[Session Bus Policy]
+org.freedesktop.secrets=talk
+
+---- Installing Shortwave ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=xdg-music;
+
+---- Installing Taigo ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;fallback-x11;
+devices=dri;
+
+---- Installing The Amazing Rules Of TAROT ------
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+---- Installing The Mana Plus Client ------
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+persistent=.config/mana;.local/share/mana;
+
+---- Installing The Passage ------
+[Context]
+shared=ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+
+---- Installing TLauncher ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+persistent=.tlauncher;.minecraft;
+
+[Environment]
+JAVA=/app/jre/bin/java
+PATH=/usr/bin:/app/bin:/app/jre/bin
+JAVA_HOME=/app/jre
+
+---- Installing Veloren ------
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=all;
 
 
