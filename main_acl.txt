@@ -1480,8 +1480,6 @@ org.freedesktop.secrets=talk
 [Environment]
 DCONF_USER_CONFIG_DIR=.config/dconf
 
----- Installing GitKraken ------
-
 ---- Installing Glade ------
 [Context]
 shared=ipc;
