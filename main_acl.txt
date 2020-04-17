@@ -2192,16 +2192,6 @@ com.canonical.AppMenu.Registrar=talk
 QT_QPA_PLATFORM=xcb
 PYTHONPATH=/app/lib/python2.7/site-packages
 
----- Installing GCompris ------
-[Context]
-shared=network;ipc;
-sockets=x11;wayland;pulseaudio;
-devices=dri;
-filesystems=xdg-config/kdeglobals:ro;
-
-[Session Bus Policy]
-com.canonical.AppMenu.Registrar=talk
-
 ---- Installing Genius ------
 [Context]
 shared=ipc;
