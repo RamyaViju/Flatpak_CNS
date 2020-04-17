@@ -570,8 +570,6 @@ org.freedesktop.Flatpak=talk
 shared=network;ipc;
 sockets=x11;wayland;session-bus;
 
----- Installing MakeMKV ------
-
 ---- Installing MediaConch ------
 [Context]
 shared=network;ipc;
