@@ -7030,8 +7030,6 @@ filesystems=host;
 [Session Bus Policy]
 org.gtk.vfs.*=talk
 
----- Installing Gitter ------
-
 ---- Installing GKraken ------
 [Context]
 shared=network;ipc;
