@@ -399,8 +399,6 @@ filesystems=home;
 org.gpodder=own
 org.gtk.vfs.*=talk
 
----- Installing Gradio ------
-
 ---- Installing GSequencer ------
 [Context]
 shared=ipc;
