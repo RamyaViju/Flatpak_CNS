@@ -7362,8 +7362,6 @@ org.gnome.OnlineAccounts=talk
 org.gnome.evolution.dataserver.Subprocess.Backend.*=talk
 org.gnome.evolution.dataserver.Calendar7=talk
 
----- Installing Obfusechoe ------
-
 ---- Installing OpenTodoList ------
 [Context]
 shared=network;ipc;
