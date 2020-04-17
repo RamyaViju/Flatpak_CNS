@@ -5080,8 +5080,6 @@ filesystems=xdg-config/kdeglobals:ro;
 [Session Bus Policy]
 com.canonical.AppMenu.Registrar=talk
 
----- Installing Indiechoor-KDEConnect ------
-
 ---- Installing IRCCloud ------
 [Context]
 shared=network;ipc;
