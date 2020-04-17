@@ -7750,20 +7750,6 @@ sockets=x11;wayland;fallback-x11;
 devices=dri;
 filesystems=home;
 
----- Installing Adobe Flash Player ------
-[Context]
-shared=network;ipc;
-sockets=x11;wayland;
-
-[Session Bus Policy]
-org.gnome.Shell.Screenshot=talk
-org.gnome.SettingsDaemon.Color=talk
-org.freedesktop.secrets=talk
-com.github.bilelmoussaoui.Authenticator.SearchProvider=own
-
-[Environment]
-ZBAR_PATH=/app/lib/libzbar.so
-
 ---- Installing Digital Assets ------
 [Context]
 shared=network;ipc;
